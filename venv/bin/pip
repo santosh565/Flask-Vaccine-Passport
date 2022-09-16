@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/mnt/ebae3adc-0df5-4123-95c3-7d6224ccc5ba/Python Projects/Flask-Vaccine-Password/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
